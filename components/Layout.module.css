@@ -24,10 +24,12 @@
   margin-bottom: 10px;
 }
 
-.sideMenu button {
+/* Style navigation buttons with rounded corners */
+.sideMenu button:not(.loginButton):not(.signupButton) {
   background-color: #007bff;
   color: white;
   border: none;
+  border-radius: 5px; /* Add rounded corners */
   padding: 10px 20px;
   width: 100%;
   text-align: left;
@@ -35,7 +37,7 @@
   transition: background-color 0.3s;
 }
 
-.sideMenu button:hover {
+.sideMenu button:not(.loginButton):not(.signupButton):hover {
   background-color: #0056b3;
 }
 
@@ -56,6 +58,7 @@
   background-color: #007bff;
   color: white;
   border: none;
+  border-radius: 5px; /* Add rounded corners */
   padding: 10px 20px;
   width: 100%;
   text-align: left;
