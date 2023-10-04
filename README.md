@@ -2,7 +2,7 @@
 
 NoteMingle is a macOS application for sharing and collaborating on exam notes. It provides a user-friendly interface for creating, sharing, and interacting with study materials, making exam preparation more efficient and collaborative.
 
-![NoteMingle Logo]![playstore](https://github.com/Liquefy7822/notes-universe/assets/127311695/3ec98987-189c-45b4-aaa6-da971a19f914)
+![NoteMingle Logo](https://github.com/Liquefy7822/notes-universe/assets/127311695/3ec98987-189c-45b4-aaa6-da971a19f914)
 
 
 ## Features
