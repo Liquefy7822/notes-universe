@@ -1,40 +1,49 @@
 // components/Layout.js
-import React from 'react';
-import { useRouter } from 'next/router';
-import styles from './Layout.module.css'; // Import your CSS module
 
-const Layout = ({ children }) => {
-  const router = useRouter();
+import Link from 'next/link';
+import styles from './Layout.module.css';
 
-  // Function to handle navigation
-  const navigateTo = (path) => {
-    router.push(path);
-  };
-
+export default function Layout({ children }) {
   return (
     <div className={styles.appContainer}>
-      <main className={styles.mainContent}>{children}</main>
-      <nav className={styles.sideMenu}>
+      <div className={styles.sideMenu}>
         <ul>
           <li>
-            <button onClick={() => navigateTo('/')}>Home</button>
+            <Link href="/">
+              <button>Home</button>
+            </Link>
           </li>
           <li>
-            <button onClick={() => navigateTo('/profile')}>Profile</button>
+            <Link href="/Viewnotes">
+              <button>View Notes</button>
+            </Link>
           </li>
-          {/* Add more menu items as buttons for other sections */}
+          <li>
+            <Link href="/Createnote">
+              <button>Create Note</button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/profile">
+              <button>User Profile</button>
+            </Link>
+          </li>
+          <li>
+            <Link href="/Settings">
+              <button>Settings</button>
+            </Link>
+          </li>
         </ul>
         <div className={styles.bottomButtons}>
-          <button className={styles.loginButton} onClick={() => navigateTo('/login')}>
-            Login
-          </button>
-          <button className={styles.signupButton} onClick={() => navigateTo('/signup')}>
-            Signup
-          </button>
+          <Link href="/login">
+            <button className={styles.loginButton}>Login</button>
+          </Link>
+          <Link href="/signup">
+            <button className={styles.signupButton}>Signup</button>
+          </Link>
         </div>
-      </nav>
+      </div>
+      <div className={styles.mainContent}>{children}</div>
     </div>
   );
-};
-
-export default Layout;
+}
