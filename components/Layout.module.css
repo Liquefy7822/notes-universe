@@ -22,6 +22,21 @@
     margin-bottom: 10px;
   }
   
+  .sideMenu button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left; /* Align button text to the left */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sideMenu button:hover {
+    background-color: #0056b3; /* Change button color on hover */
+  }
+  
   .mainContent {
     flex: 1; /* Allow the main content to expand and fill the remaining space */
     padding: 20px;

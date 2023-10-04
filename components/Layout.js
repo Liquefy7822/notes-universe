@@ -9,18 +9,26 @@ const Layout = ({ children }) => {
       <nav className={styles.sideMenu}>
         <ul>
           <li>
-            <Link href="/">Home</Link>
+            <button>
+              <Link href="/">Home</Link>
+            </button>
           </li>
           <li>
-            <Link href="/login">Login</Link>
+            <button>
+              <Link href="/login">Login</Link>
+            </button>
           </li>
           <li>
-            <Link href="/signup">Signup</Link>
+            <button>
+              <Link href="/signup">Signup</Link>
+            </button>
           </li>
           <li>
-            <Link href="/profile">Profile</Link>
+            <button>
+              <Link href="/profile">Profile</Link>
+            </button>
           </li>
-          {/* Add more menu items for other sections */}
+          {/* Add more menu items as buttons for other sections */}
         </ul>
       </nav>
       <main className={styles.mainContent}>{children}</main>
@@ -29,4 +37,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
