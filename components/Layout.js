@@ -13,16 +13,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className={styles.appContainer}>
+      <main className={styles.mainContent}>{children}</main>
       <nav className={styles.sideMenu}>
         <ul>
           <li>
             <button onClick={() => navigateTo('/')}>Home</button>
-          </li>
-          <li>
-            <button onClick={() => navigateTo('/login')}>Login</button>
-          </li>
-          <li>
-            <button onClick={() => navigateTo('/signup')}>Signup</button>
           </li>
           <li>
             <button onClick={() => navigateTo('/profile')}>Profile</button>
@@ -30,9 +25,17 @@ const Layout = ({ children }) => {
           {/* Add more menu items as buttons for other sections */}
         </ul>
       </nav>
-      <main className={styles.mainContent}>{children}</main>
+      <div className={styles.bottomButtons}>
+        <button className={styles.loginButton} onClick={() => navigateTo('/login')}>
+          Login
+        </button>
+        <button className={styles.signupButton} onClick={() => navigateTo('/signup')}>
+          Signup
+        </button>
+      </div>
     </div>
   );
 };
 
 export default Layout;
+
