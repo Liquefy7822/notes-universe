@@ -1,11 +1,12 @@
 // components/Layout.js
 import React from 'react';
 import Link from 'next/link';
+import styles from './Layout.module.css'; // Import your CSS module
 
 const Layout = ({ children }) => {
   return (
-    <div className="app-container">
-      <nav className="side-menu">
+    <div className={styles.appContainer}>
+      <nav className={styles.sideMenu}>
         <ul>
           <li>
             <Link href="/">Home</Link>
@@ -22,9 +23,10 @@ const Layout = ({ children }) => {
           {/* Add more menu items for other sections */}
         </ul>
       </nav>
-      <main className="main-content">{children}</main>
+      <main className={styles.mainContent}>{children}</main>
     </div>
   );
 };
 
 export default Layout;
+
