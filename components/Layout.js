@@ -8,6 +8,9 @@ export default function Layout({ children }) {
     <div className={styles.appContainer}>
       <div className={styles.sideMenu}>
         <ul>
+          <Head>
+            <link rel="icon" href="/Favicon.ico" />
+          </Head>
           <li>
             <Link href="/">
               <button>Home</button>
