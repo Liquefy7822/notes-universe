@@ -24,18 +24,17 @@ const Layout = ({ children }) => {
           </li>
           {/* Add more menu items as buttons for other sections */}
         </ul>
+        <div className={styles.bottomButtons}>
+          <button className={styles.loginButton} onClick={() => navigateTo('/login')}>
+            Login
+          </button>
+          <button className={styles.signupButton} onClick={() => navigateTo('/signup')}>
+            Signup
+          </button>
+        </div>
       </nav>
-      <div className={styles.bottomButtons}>
-        <button className={styles.loginButton} onClick={() => navigateTo('/login')}>
-          Login
-        </button>
-        <button className={styles.signupButton} onClick={() => navigateTo('/signup')}>
-          Signup
-        </button>
-      </div>
     </div>
   );
 };
 
 export default Layout;
-

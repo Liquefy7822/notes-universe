@@ -1,17 +1,18 @@
 /* components/Layout.module.css */
 .appContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
 }
 
 .sideMenu {
-  width: 200px;
-  background-color: #333;
+  background-color: #000; /* Black background color */
   color: white;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  justify-content: space-between; /* Space between items */
+  height: 100%; /* Occupy full height */
 }
 
 .sideMenu ul {
@@ -45,8 +46,9 @@
 
 .bottomButtons {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  flex-direction: column; /* Display items vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  margin-top: auto; /* Push buttons to the bottom */
 }
 
 .loginButton,
@@ -55,9 +57,11 @@
   color: white;
   border: none;
   padding: 10px 20px;
-  width: 45%; /* Adjust the width as needed */
+  width: 100%;
+  text-align: left;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 10px; /* Add space between buttons */
 }
 
 .loginButton:hover,
