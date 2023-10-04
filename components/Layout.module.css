@@ -24,9 +24,9 @@
   margin-bottom: 10px;
 }
 
-/* Style navigation buttons with rounded corners */
+/* Style navigation buttons with rounded corners and a different color */
 .sideMenu button:not(.loginButton):not(.signupButton) {
-  background-color: #007bff;
+  background-color: #007bff; /* Default color for navigation buttons */
   color: white;
   border: none;
   border-radius: 5px; /* Add rounded corners */
@@ -38,7 +38,7 @@
 }
 
 .sideMenu button:not(.loginButton):not(.signupButton):hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Hover color for navigation buttons */
 }
 
 .mainContent {
@@ -55,7 +55,7 @@
 
 .loginButton,
 .signupButton {
-  background-color: #007bff;
+  background-color: #007bff; /* Default color for login and signup buttons */
   color: white;
   border: none;
   border-radius: 5px; /* Add rounded corners */
@@ -69,5 +69,5 @@
 
 .loginButton:hover,
 .signupButton:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Hover color for login and signup buttons */
 }
